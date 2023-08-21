@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;800&display=swap');
+
+:root {
+    --darkgrey: #414141;
+    --lightgrey: #EBEBEB;
+    --white: #fff;
+}
+
+/* Header Text and Styling */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--lightgrey);
+    color: var(--darkgrey);
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+    margin: 10;
+    padding: 10;
+    line-height: normal;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 24px;
+    margin: 10;
+    padding: 0;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 18px;
+    margin: 10;
+    padding: 0;
+}
+
+/* Buttons and Form Elements */
+.btn-primary {
+    background-color: var(--darkgrey);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 22px 30px;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn-large {
+    background-color: var(--darkgrey);
+    color: var(--white);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 22px 30px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn-large-white {
+    background-color: var(--white);
+    color: var(--darkgrey);
+    width: 100%;
+    border: var(--darkgrey) 2px solid;
+    border-radius: 10px;
+    padding: 22px 30px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+input[type="text"] {
+    flex-grow: 3;
+    margin-right: 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    min-width: 400px;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    color: var(--darkgrey);
+    padding: 5px;
+}
+
+/* Multi Step Form Styling */
+.stepsContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.stepsContainer h1,
+.stepsContainer h2,
+.stepsContainer h3 {
+    font-family: 'Nocito Sans TC', sans-serif;
+}
+
+.spinning {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.leftContainer {
+    width: 65%;
+    float: left;
+    padding: 2%;
+}
+
+.rightContainer {
+    width: 25%;
+    float: right;
+    padding: 2%;
+}
+
+.mapContainer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: #414141 2px solid;
+}
+
+.airQualityMarkers table {
+    width: 100% !important;
+    border: none;
+    background-color: transparent;
+}
+
+td {
+    text-align: left;
+}
+
+.stepsContainer .airQualityMarkers tr,
+.stepsContainer .airQualityMarkers td {
+    border: none !important;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.iconStats {
+    min-width: 60px;
+    width: auto;
+    height: 60px;
+    padding: 3px;
+    font-size: 24px;
+    font-weight: 800;
+    background: var(--darkgrey) !important;
+    text-align: center;
+    color: var(--white) !important;
+    border-radius: 8px;
+    margin: 30px 0;
+    line-height: normal;
+    border-collapse: separate;
+}
+
+.step {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    display: inline;
+}
+
+.step.active {
+    opacity: 1;
+    position: static;
+    pointer-events: auto;
+}
+
+.choices {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    line-height: 2.5;
+}
+
+.choices button {
+    width: 100%;
+}
