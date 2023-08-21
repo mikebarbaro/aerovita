@@ -260,7 +260,7 @@ td {
     word-wrap:normal;
 }
 
-/* For mobile views, make the product cards stack */
+/* For mobile views */
 @media (max-width: 700px) {
     .product-card {
         flex: 0 0 100%;
@@ -279,12 +279,21 @@ td {
     }
 
     input[type="text"], .modal input[type="email"] {
-        min-width: 100%;
+        min-width: 90%;
     }
+
+    .stepsContainer {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
 
 }
 
 @media (min-width: 700px) {
+    
     .leftContainer {
         width: 65%;
         flex: none;
