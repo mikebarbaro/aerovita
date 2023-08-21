@@ -90,6 +90,14 @@ header {
     color: var(--darkgrey);
     padding: 5px;
 }
+header img {
+    max-width: 1200px;
+}
+@media (max-width: 700px) {
+    header img {
+        width: 100%;
+    }
+}
 
 /* Multi Step Form Styling */
 .stepsContainer {
