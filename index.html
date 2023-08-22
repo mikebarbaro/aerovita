@@ -147,23 +147,6 @@
             <div class="step choices">
                 <p class="muted">5 of 7</p>
                 <h1>How often do you change filters?</h1>
-                <input type="radio" id="allergies" name="importance" value="allergies"> <label for="allergies">Brand
-                    new</label><br>
-                <input type="radio" id="environment" name="importance" value="environment"> <label
-                    for="environment">Less than 10 years old</label><br>
-                <input type="radio" id="energy" name="importance" value="energy"> <label for="energy">10-15 years
-                    old</label><br>
-                <input type="radio" id="all" name="importance" value="all"> <label for="all">Over 20 years
-                    old</label><br>
-                <button class="btn-large" onclick="moveToStep(9)">Continue</button>
-                <br>
-                <button class="btn-large-white" onclick="moveToStep(7)">Back</button>
-            </div>
-
-            <!-- Step 8 -->
-            <div class="step choices">
-                <p class="muted">6 of 7</p>
-                <h1>How often do you change filters?</h1>
                 <input type="radio" id="allergies" name="importance" value="allergies"> <label for="allergies">Once per
                     month</label><br>
                 <input type="radio" id="environment" name="importance" value="environment"> <label
@@ -172,14 +155,14 @@
                     awhile...</label><br>
                 <input type="radio" id="all" name="importance" value="all"> <label for="all">My furnace doesn't have a
                     filter</label><br>
-                <button class="btn-large" onclick="moveToStep(10)">Continue</button>
+                <button class="btn-large" onclick="moveToStep(9)">Continue</button>
                 <br>
-                <button class="btn-large-white" onclick="moveToStep(8)">Back</button>
+                <button class="btn-large-white" onclick="moveToStep(7)">Back</button>
             </div>
 
-            <!-- Step 9 -->
+            <!-- Step 8 -->
             <div class="step choices">
-                <p class="muted">7 of 7</p>
+                <p class="muted">6 of 7</p>
                 <h1>Do you use an air purifier or humidifier?</h1>
                 <input type="radio" id="allergies" name="importance" value="allergies"> <label for="allergies">Air
                     purifier</label><br>
@@ -189,6 +172,20 @@
                     humidifier</label><br>
                 <input type="radio" id="all" name="importance" value="all"> <label for="all">None of the
                     above</label><br>
+                <button class="btn-large" onclick="moveToStep(10)">Continue</button>
+                <br>
+                <button class="btn-large-white" onclick="moveToStep(8)">Back</button>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="step choices">
+                <p class="muted">7 of 7</p>
+                <h1>Have you ever cleaned your air ducts?</h1>
+                <input type="radio" id="never" name="importance" value="never"> <label for="never">Never</label><br>
+                <input type="radio" id="environment" name="importance" value="environment"> <label
+                    for="environment">It's been awhile</label><br>
+                <input type="radio" id="energy" name="importance" value="energy"> <label for="energy">Within the last year</label><br>
+                <input type="radio" id="all" name="importance" value="all"> <label for="all">What's an air duct?</label><br>
                 <button class="btn-large" onclick="window.location.href='shop.html'">Continue</button>
                 <br>
                 <button class="btn-large-white" onclick="moveToStep(9)">Back</button>
